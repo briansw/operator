@@ -108,6 +108,7 @@ export const SellLotValue = styled.div`
 `
 
 export const SmallButton = styled.div`
+  color: ${colors.white};
   border: 2px solid transparent;
   font-size: ${fontsize.small};
   position: relative;
@@ -119,8 +120,12 @@ export const SmallButton = styled.div`
   padding: 12px 10px 10px 10px;
   margin-left: 2px;
   text-align: center;
-  &:hover { border-color: inherit; }
-  &:active { background: ${colors.black} !important; }
+  &:hover { border-color: ${colors.black}; }
+  &:active { 
+    background: ${colors.black} !important; 
+    color: ${colors.black} !important;
+    border-color: inherit !important;
+  }
 `
 
 export const BidHistory = styled.div`
@@ -159,6 +164,7 @@ export const OperatorStyles = styled.div`
         right: 0;
         top: 0;
         background: ${colors.gray666};
+        &:hover { border-color: ${colors.white}; }
       }
 
       .min-max-wrapper {
@@ -283,11 +289,17 @@ export const OperatorStyles = styled.div`
     .Cancel {
       border-color: ${colors.graye5};
       color: ${colors.gray666};
-      &:hover { border-color: ${colors.graye5} !important; }
-      &:active { color: ${colors.black}; border-color: ${colors.black} !important; }
     }
 
     .ActionButtons { display: none; }
+    .Typing {
+      border-color: ${colors.purple};
+      .InputButtonLabel { color: ${colors.purple}; }
+      .InputButtonPlaceholder { display: block; }
+      .InputButtonValue { display: none; }
+      .ActionButtons { display: block; }
+      .ToggleButtons { display: none; }
+    }
 
     .CurrentAsk {
       height: 140px;

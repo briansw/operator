@@ -64,7 +64,7 @@ export default function OperatorLayout() {
         </div>
 
         <div className="ActivityPanel">
-          <InputButton className="CurrentAsk">
+          <InputButton className="CurrentAsk Typing">
             <span className="InputButtonLabel">Current ask</span>
             <span className="InputButtonValue">1,000</span>
             <span className="InputButtonPlaceholder">1,000</span>
