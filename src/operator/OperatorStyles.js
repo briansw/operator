@@ -153,11 +153,20 @@ export const OperatorStyles = styled.div`
         transform: translateY(-50%);
       }
 
-      .current-lot-wrapper {
+      .CurrentLot {
         position: absolute;
         top: 50%;
         left: 100px;
         transform: translateY(-50%);
+        font-size: ${fontsize.small};
+        .LotIcon {
+          width: 38px;
+          height: 38px;
+        }
+        .LotTitle {
+          display: inline-block;
+          margin: 7px 0 0 10px;
+        }
       }
 
       .Undo {

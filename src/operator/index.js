@@ -15,8 +15,12 @@ export default function OperatorLayout() {
   return <OperatorStyles>
       <div className="utilities">
         <img className="artsy-logo" alt="" src="/img/artsy-logo.svg" height="26" />
-        <div className="current-lot-wrapper">
-          <img className="lot-artwork" alt="" src="/img/artwork@2x.png" height="38" />
+        <div className="CurrentLot">
+          <img className="LotIcon" alt="" src="/img/artwork-thumb-a.png" />
+          <div className="LotTitle">
+            Lot 874<br />
+            Ugo Rondinone
+          </div>
         </div>
 
         <div className="min-max-wrapper">
@@ -80,7 +84,9 @@ export default function OperatorLayout() {
             <span className="InputButtonValue">100</span>
             <span className="InputButtonPlaceholder">100</span>
             <div className="ToggleButtons">
-              <SmallButton className="Toggle Active Default">Default</SmallButton>
+              <SmallButton className="Toggle Active Default">
+                Default
+              </SmallButton>
               <SmallButton className="Toggle TwoFiveEight">2-5-8</SmallButton>
               <SmallButton className="Toggle Manual">Manual</SmallButton>
             </div>
