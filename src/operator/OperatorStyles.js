@@ -93,8 +93,9 @@ export const WideButton = styled.div`
 `
 
 export const InputButton = styled.div`
+  display: inline-block;
   border: 2px solid ${colors.black};
-  margin: 10px !important;
+  margin: 10px;
   position: relative;
   width: 300px;
   background: ${colors.white};
@@ -289,6 +290,7 @@ export const OperatorStyles = styled.div`
     .Cancel {
       border-color: ${colors.graye5};
       color: ${colors.gray666};
+      &:hover { border-color: ${colors.black}; }
     }
 
     .ActionButtons { display: none; }
